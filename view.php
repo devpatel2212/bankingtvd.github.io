@@ -16,29 +16,9 @@
             <th>DOB</th>
             <th>Bank_Balance</th>
         </tr>
-        <?php
-        $conn = mysqli_connect("localhost","root","","sparks_sample");
-        /*if($conn->connection_aborted)
-        {
-            die("Connection failed". $conn-> connection_aborted);
-        }*/
-        $sql = "SELECT Name, Residence, DOB, Bank_Balance from tvdr";
-        $result = $conn-> query($sql);
-        $r = mysqli_num_rows($result);
-        if($r > 0)
-        {
-            while($row = $result-> fetch_assoc())
-            {
-                echo "<tr><td>".$row["Name"]."</td><td>".$row["Residence"]."</td><td>".$row["DOB"]."</td><td>".$row["Bank_Balance"]."</td></tr>";
-            }
-            echo "</table>";
-        }
-        else
-        {
-            echo "0 result";
-        }
-        $conn-> close();
-        ?>
+        <?php    
+     echo "hello";
+         ?>
     </table>
     <hr>
     <p class="use" align="center">Select the user you want to be</p>
